@@ -23,7 +23,10 @@ vim.opt.updatetime = 50
 
 vim.opt.colorcolumn = "80,120"
 
-vim.cmd(":hi ColorColumn ctermbg=234 guibg=lightgrey")
+vim.opt.mouse = ""
+
+vim.g.mapleader = " "
+
 vim.cmd [[
     augroup numbertoggle
         autocmd!
@@ -31,3 +34,6 @@ vim.cmd [[
         autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu                  | set nornu | endif
     augroup END
 ]]
+
+
+vim.cmd([[colorscheme habamax]])
