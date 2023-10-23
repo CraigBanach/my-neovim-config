@@ -1,5 +1,4 @@
 print("Welcome, Craig.")
-print("Test print")
 
 require("craigbanach")
 
