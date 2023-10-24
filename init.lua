@@ -18,44 +18,8 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>a", function() print "hi" end)
 
-require("lazy").setup(
-    {
-        { dir = "~/.config/nvim/lua/craigbanach/plugins/init.lua" },
-        { 
-            "nvim-treesitter/nvim-treesitter",
-            build = ":TSUpdate",
-            config = function ()
-                local configs = require("nvim-treesitter.configs")
-
-                configs.setup({
-                    ensure_installed = {
-                        "c",
-                        "lua",
-                        "vim",
-                        "vimdoc",
-                        "query",
-                        "elixir",
-                        "heex",
-                        "javascript",
-                        "typescript",
-                        "html",
-                        "css",
-                    },
-                    sync_install = false,
-                    highlight = { enable = true },
-                    indent = { enable = true },
-                })
-            end
-        },
-        { "AndrewRadev/splitjoin.vim" },
-        {
-            'nvim-telescope/telescope.nvim',
-            tag = '0.1.4',
-            dependencies = {
-                'nvim-lua/plenary.nvim',
-                { 'nvim-treesitter/nvim-treesitter' }
-            }
-        },
-        { dir = "~/.config/nvim/lua/craigbanach/plugins/telescope.lua" },
-    }
-)   
+require("lazy").setup({ { import = "craigbanach.plugins" } }, {
+    install = {
+        colorscheme = { "habamax" },
+    },
+})
