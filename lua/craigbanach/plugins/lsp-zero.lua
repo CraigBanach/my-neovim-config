@@ -80,6 +80,7 @@ return {
                     'solidity',
                     'svelte',
                     'yamlls',
+                    'eslint_d'
                 },
                 handlers = {
                     lsp_zero.default_setup,
