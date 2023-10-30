@@ -72,7 +72,6 @@ return {
                     'tsserver',
                     'html',
                     'jsonls',
-                    'csharp_ls',
                     'cssls',
                     'lua_ls',
                     'marksman',
@@ -80,7 +79,6 @@ return {
                     'solidity',
                     'svelte',
                     'yamlls',
-                    'eslint_d'
                 },
                 handlers = {
                     lsp_zero.default_setup,
