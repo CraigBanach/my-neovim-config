@@ -20,6 +20,14 @@ The goal is not to endlessly tweak Neovim, but to have a reliable editor that:
 - `init.lua` → entry point
 - `lua/config/*` → core config (options, keymaps, autocmds, lazy setup)
 - `lua/plugins/*` → plugin definitions
+- `docs/cheatsheets/*` → quick reference notes
+
+## Cheat Sheets
+
+- `docs/cheatsheets/nvim-quick-reference.md`
+- `docs/cheatsheets/window-navigation.md`
+- `docs/cheatsheets/git-in-neovim.md`
+- `docs/cheatsheets/rust-workflow.md`
 
 ## Keymaps
 

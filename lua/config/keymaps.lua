@@ -16,3 +16,5 @@ map("n", "gr", vim.lsp.buf.references, { desc = "References" })
 map("n", "K", vim.lsp.buf.hover, { desc = "Hover" })
 map("n", "<leader>rn", vim.lsp.buf.rename, { desc = "Rename" })
 map("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
+
+map("n", "<leader>mp", "<cmd>RenderMarkdown toggle<cr>", { desc = "Markdown render toggle" })
