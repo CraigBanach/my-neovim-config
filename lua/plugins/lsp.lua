@@ -2,15 +2,12 @@ return {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      local lspconfig = require("lspconfig")
-
-      lspconfig.rust_analyzer.setup({
+      vim.lsp.config("rust_analyzer", {
         settings = {
           ["rust-analyzer"] = {
             cargo = {
               allFeatures = true,
             },
-            checkOnSave = true,
             check = {
               command = "clippy",
             },
@@ -18,7 +15,8 @@ return {
         },
       })
 
-      lspconfig.lua_ls.setup({})
+      vim.lsp.enable("rust_analyzer")
+      vim.lsp.enable("lua_ls")
     end,
   },
 }
