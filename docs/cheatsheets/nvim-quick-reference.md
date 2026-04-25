@@ -46,6 +46,15 @@
 - Exit terminal mode to normal mode: `<C-\\><C-n>`
 - Use window moves from normal mode: `<C-w>h` / `<C-w>j` / `<C-w>k` / `<C-w>l`
 
+## tmux Essentials (WSL)
+
+- Start tmux session: `tmux new -s parkrun`
+- Prefix key: `Ctrl-a` (custom) or `Ctrl-b` (default)
+- New pane left/right: `<prefix> %`
+- New pane top/bottom: `<prefix> "`
+- Move pane focus: `<prefix>` + arrow key
+- Zoom current pane: `<prefix> z`
+
 ## Telescope Tips
 
 - In picker, use `<C-j>`/`<C-k>` to move selection
