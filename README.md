@@ -28,6 +28,7 @@ The goal is not to endlessly tweak Neovim, but to have a reliable editor that:
 - `docs/cheatsheets/window-navigation.md`
 - `docs/cheatsheets/git-in-neovim.md`
 - `docs/cheatsheets/rust-workflow.md`
+- `docs/cheatsheets/wsl-tmux-opencode-workflow.md`
 
 ## Keymaps
 

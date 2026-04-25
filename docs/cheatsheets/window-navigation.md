@@ -41,3 +41,13 @@
 - Code + tests side-by-side: `:vs` then switch with `<C-w>h/l`
 - Read docs while editing: `:sp README.md`
 - Reset messy layout: `<C-w>=` then `:only` if needed
+
+## WSL + tmux + Neovim Flow
+
+- Keep Neovim focused on editing and navigation.
+- Use tmux panes for context switching:
+  - Pane 1: `nvim .`
+  - Pane 2: `opencode`
+  - Pane 3: shell tools (`yazi`, `cargo check`, git)
+- In Neovim, use `:vs path/to/file` and `:sp path/to/file` for temporary local views.
+- Use `:copen` after build/check commands to jump errors quickly.

@@ -8,6 +8,15 @@
 - Save file: `:w`
 - Save and quit: `:wq`
 
+## Windows and Quickfix
+
+- Vertical split: `:vs`
+- Horizontal split: `:sp`
+- Move windows: `<C-w>h` / `<C-w>j` / `<C-w>k` / `<C-w>l`
+- Open quickfix list: `:copen`
+- Close quickfix list: `:cclose`
+- Next/prev quickfix item: `:cnext` / `:cprev`
+
 ## Search and Navigation
 
 - Find files: `<leader>ff`
@@ -30,6 +39,12 @@
 
 - Toggle in-editor markdown rendering: `<leader>mp`
 - Command: `:RenderMarkdown toggle`
+
+## Terminal Mode
+
+- Open terminal in current window: `:terminal`
+- Exit terminal mode to normal mode: `<C-\\><C-n>`
+- Use window moves from normal mode: `<C-w>h` / `<C-w>j` / `<C-w>k` / `<C-w>l`
 
 ## Telescope Tips
 
